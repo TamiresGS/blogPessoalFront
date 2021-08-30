@@ -12,12 +12,12 @@
 
         <li class="nav-item active m-2">
           <img
-            src="https://media-exp1.licdn.com/dms/image/C4E03AQFJrFNnRW9eQA/profile-displayphoto-shrink_200_200/0/1629251253133?e=1635379200&v=beta&t=DKB5cLxTrbMZlPXgclDJ8r7ouMgLbkUiKS0PK0TpnPU"
+            src="{{foto}}"
             alt="Imagem do usuario" width="50px" height="50px" class="img-fluid rounded-circle ">
         </li>
 
         <li class="nav-item pl-3">
-          <p class="m-2 font-weight-bold text-white fs-16"> Nome do Usuário! </p>
+          <p class="m-2 font-weight-bold text-white fs-16"> {{nome}} </p>
         </li>
 
         <li class="nav-item pl-3">
@@ -30,7 +30,7 @@
     <div class="col-md-1">
       <ul class="navbar-nav ml-auto d-flex align-items-center">
         <li class="nav-item pl-3">
-          <a class="m-0 font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+          <a (click)="sair()" class="m-0 font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
         </li>
       </ul>
     </div>
